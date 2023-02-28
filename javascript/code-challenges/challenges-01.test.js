@@ -54,10 +54,12 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  (word.toUpperCase + '!');
-  return greeting;
+  // Solution code here...
 };
 
+const speaker = (words, callback) => {
+  // Solution code here...
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
