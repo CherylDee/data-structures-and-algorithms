@@ -27,7 +27,7 @@ const updateAnimal = (arr, callback) => {
     return callback(animal);
   });
   return newUpdateAnimal;
-  
+
 
 };
 
@@ -86,8 +86,10 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  return arr.sort();
+
 };
-return arr.sort();
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
