@@ -54,11 +54,22 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 const greeting = (word) => {
   // Solution code here...
+
+
+const greeting = (word) => word.toUpperCase() + '!';
+
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+ let newArr = [];
+  word.forEach elm => {
+    newArr.push(callback(elm);
 };
+  return newArr;
+};
+
+
+=======
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -77,12 +88,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; 1 < times; i++) {
+    callback(arr, num);
 };
+  return arr;
 
 /* ------------------------------------------------------------------------------------------------
 
