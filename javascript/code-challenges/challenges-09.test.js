@@ -39,7 +39,7 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  return Object.values(obj);
+  (obj, value) => Object.values(obj).includes(value);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +62,10 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  let newArr = []
+  for (const [key, value] of Object.entries(obj)) {
+    newArr.push(`${key}: ${value}`);
+  } return newArr;
 };
 
 
@@ -117,9 +120,7 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  arr.forEach((house) => houses.push(house.house));
-  return houses;
+  const getHouses = (arr) => arr.map(e => e.house);
 };
 
 /*------------------------------------------------------------------------------------------------
