@@ -156,7 +156,9 @@ Here is a sample board:
 The top row of the board is considered row zero and row numbers increase as they go down.
 ------------------------------------------------------------------------------------------------ */
 
-const battleship = (board, row, col) => {
+const battleship = (board, row, col) => {const howManyTreats = (arr) => {
+  return arr[2].items[1].quantity;
+};
   //  Solution code here...
 };
 
