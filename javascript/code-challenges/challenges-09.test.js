@@ -8,11 +8,8 @@ using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
-const maxInArray = (arr) => {
-  return arr.reduce((acc, curr) => {
-    return curr > acc ? curr : acc;
-  });
-};
+const maxInArray = (arr) => arr.reduce((acc, val) => val > acc ? val : acc);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
