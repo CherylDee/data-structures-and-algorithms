@@ -53,8 +53,8 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  let nameArr = charArray.sort((a, b) => a.name - b.name ? 1 : -1);
-  return nameArr.sort((a, b) => a.children.length - b.children.length);
+   const newArr = charArray.sort((a, b) => a.name - b.name ? 1 : -1);
+  return newArr.sort((a, b) => a.children.length - b.children.length);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,8 +84,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let regex = /[0-9]/;
-  return regex.test(input);
+  let regexPattern = /[0-9]/g;
+  return regexPattern.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,8 +96,8 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  let regex = /world/;
-  return regex.test(input);
+  let regexPattern = /world/g;
+  return regexPattern.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -120,12 +120,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  let cityPattern = /^[A-J]/;
-  let results = [];
+  let regexPattern = /^[A-J]/;
+  let cityArray = [];
   arr.forEach((city) => {
-    if (cityPattern.test(city)) results.push(city);
+    if (regexPattern.test(city)) {
+      cityArray.push(city);
+    }
   });
-  return results;
+  return cityArray;
 };
 
 /* ------------------------------------------------------------------------------------------------

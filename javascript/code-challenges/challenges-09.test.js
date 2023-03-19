@@ -8,7 +8,10 @@ using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
-const maxInArray = (arr) => arr.reduce((acc, val) => val > acc ? val : acc);
+const maxInArray = (arr) => {
+  // Solution code here...
+  return arr.reduce((acc, cur) => Math.max(acc, cur), -Infinity);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -24,6 +27,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => Object.keys(obj);
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -31,8 +35,8 @@ Write a function named checkValues that takes in an object and a value and retur
 
 
 ------------------------------------------------------------------------------------------------ */
+const checkValues = (obj, value) => Object.values(obj).includes(value);
 
-const checkValues = (obj, value) =>  Object.values(obj).includes(value);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -52,14 +56,14 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ]
 
 ------------------------------------------------------------------------------------------------ */
-
 const updateNumbers = (obj) => {
   let newArr = []
   for (const [key, value] of Object.entries(obj)) {
     newArr.push(`${key}: ${value}`);
   } return newArr;
-};
 
+
+};
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,9 +114,9 @@ const characters = [
     house: 'Snow',
   },
 ];
-/*------------------------------------------------------------------------------------------------*/
 
 const getHouses = (arr) => arr.map(e => e.house);
+
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -159,7 +163,7 @@ CHALLENGE 8 - Stretch Goal
 Write a function named totalCharacters that takes in an array and returns the number of characters in the array.
 ------------------------------------------------------------------------------------------------ */
 
-const totalCharacters = (arr) => {
+const totalCharacters = (arr) => {hasChildrenEntries = (arr, character) => {
   // Solution code here...
 };
 
