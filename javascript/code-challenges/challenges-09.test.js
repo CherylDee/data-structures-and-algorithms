@@ -8,11 +8,7 @@ using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
-const maxInArray = (arr) => {
-  return arr.reduce((acc, curr) => {
-    return curr > acc ? curr : acc;
-  });
-};
+const maxInArray = (arr) => arr.reduce((acc, val) => val > acc ? val : acc);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -26,9 +22,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true
 };
 
-const getCourseKeys = (obj) => {
-  return Object.keys(obj);
-};
+const getCourseKeys = (obj) => Object.keys(obj);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -38,9 +32,7 @@ Write a function named checkValues that takes in an object and a value and retur
 
 ------------------------------------------------------------------------------------------------ */
 
-const checkValues = (obj, value) => {
-  (obj, value) => Object.values(obj).includes(value);
-};
+const checkValues = (obj, value) =>  Object.values(obj).includes(value);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -118,11 +110,9 @@ const characters = [
     house: 'Snow',
   },
 ];
+/*------------------------------------------------------------------------------------------------*/
 
-const getHouses = (arr) => {
-  const getHouses = (arr) => arr.map(e => e.house);
-};
-
+const getHouses = (arr) => arr.map(e => e.house);
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -136,17 +126,19 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
- let children = 0;
-
- arr.forEach(person => {
-  if(person.name === character) {
-    Object.keys(person).forEach((key, idx) => {
-      if(key === 'children') {
-        children = Object.values(person)[idx].length;
-      }
-    });
-
-  return children ? true : false;
+  let hasChildren = false;
+  arr.forEach((person) => {
+    if (person.name === character) {
+      Object.keys(person).forEach((key, i) => {
+        if (key === 'children') {
+          if (Object.values(person)[i].length) {
+            hasChildren = true;
+          }
+        }
+      });
+    }
+  });
+  return hasChildren;
 };
 
 /* ------------------------------------------------------------------------------------------------
