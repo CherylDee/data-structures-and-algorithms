@@ -8,9 +8,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  let strArr = str.split('');
-  let newStrArr = strArr.splice(-10);
-  return newStrArr;
+  let newArr = str.split('');
+  let newerArr = newArr.splice(-10);
+  return newerArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,7 +54,6 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-
   let sum = 0;
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
@@ -62,7 +61,9 @@ const totalSum = (matrix) => {
     }
   }
   return sum;
+
 };
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,7 +97,6 @@ const grandTotal = (stores) => {
     }
   }
   return tempArray;
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,6 +110,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
+
   return hours.map((hour, index) => ({ sales: `${data[index]} cookies`, time: hour }));
 };
 
@@ -156,9 +157,7 @@ Here is a sample board:
 The top row of the board is considered row zero and row numbers increase as they go down.
 ------------------------------------------------------------------------------------------------ */
 
-const battleship = (board, row, col) => {const howManyTreats = (arr) => {
-  return arr[2].items[1].quantity;
-};
+const battleship = (board, row, col) => {
   //  Solution code here...
 };
 
