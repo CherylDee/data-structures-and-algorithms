@@ -35,6 +35,10 @@ Write a function named removeThree that takes an index and an array. The functio
 const removeThree = (idx, arr) => {
   arr.splice(idx, 3);
   return arr;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1177c01e6ca6b50b14e26e73e36d6a396278b2a
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -42,6 +46,10 @@ CHALLENGE 3
 Write a function named joinArray that takes an array and joins all of the elements together in one string on a space.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1177c01e6ca6b50b14e26e73e36d6a396278b2a
 const joinArray = (arr) => arr.join(' ');
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,7 +64,6 @@ Your function should use slice within a loop and return an array of each success
 For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
-
 const howMuchPencil = (str) => {
   let result = [];
   for (let i = 0; i < str.length; i++) {
@@ -65,7 +72,6 @@ const howMuchPencil = (str) => {
   result.push('');
   return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -75,7 +81,10 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => arr.split('');
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1177c01e6ca6b50b14e26e73e36d6a396278b2a
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
